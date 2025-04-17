@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh '''
                    echo "test stage"
-                   touch "build/inndex.html"
+                   -f "build/inndex.html"
                 '''
             }
         }
