@@ -38,10 +38,12 @@ pipeline {
             }
         }
 
+//image 'pull mcr.microsoft.com/playwright:v1.39.0-jammy'
+
         stage('E2E') {
             agent {
                 docker {
-                    image 'mcr.microsoft.com/playwright:v1.51.1-noble'
+                    image 'pull mcr.microsoft.com/playwright:v1.51.1-noble'
                     reuseNode true
                 }
             }
