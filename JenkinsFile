@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh '''
                    echo "test stage"
-                   -f "build/index.html"
+                   -f "*/build/index.html"
                 '''
             }
         }
