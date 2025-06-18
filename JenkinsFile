@@ -100,13 +100,13 @@ pipeline {
         }
 
 
-       stage('Approval') {
-            steps {
-                timeout(time: 1, unit: 'MINUTES') {
-                    input 'Read to Deploy?'
-                }
-            }
-        }
+    //    stage('Approval') {
+    //         steps {
+    //             timeout(time: 1, unit: 'MINUTES') {
+    //                 input 'Read to Deploy?'
+    //             }
+    //         }
+    //     }
 
 
         stage('Deploy PROD') {
