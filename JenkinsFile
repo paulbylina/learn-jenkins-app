@@ -20,11 +20,7 @@ pipeline {
             steps {
                 sh '''
                     aws --version
-
-
-
-
-
+                    "--entrypoint=''"
                 '''
             }
         }
